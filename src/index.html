@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <title>Test</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header_wrapper">
+      <img class="brandLogo" src="images/logo.png" alt="brand logo">
+      <div class="brandPhone">
+        <a href="tel:+74997777777">+7(499) 777-77-77</a>
+        <a href="tel:+74997777777">+7(499) 777-77-77</a>
+      </div>
+    </div>
+  </header>
+  <section class="form">
+    <div class="form_wrapper">
+      <h2>Форма с кнопкой</h2>
+      <form action="#" method="POST">
+        <label for="userPhone">Оставь телефон и получи что-то офигенное</label>
+        <input id="userPhone" type="tel" placeholder="Введите номер">
+        <input type="submit" value="Получить">
+      </form>
+    </div>
+  </section>
+  <section class="slider_wrapper">
+    <h2>Тут у нас слайдер</h2>
+    <div class="slider__container">
+      <div id="slide"></div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div class="slider__dots">
+      <span class="slider__dots--dot active" onclick="currentSlide(1)"></span> 
+      <span class="slider__dots--dot" onclick="currentSlide(2)"></span> 
+      <span class="slider__dots--dot" onclick="currentSlide(3)"></span> 
+    </div>
+  </section>
+  <section class="text_wrapper">
+    <h2>Просто текстовый блок</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere quis arcu sit amet commodo. Nullam ac dui lacus. Nulla dapibus interdum interdum. Curabitur ut diam nisl. Vivamus libero lacus, viverra at dolor sit amet, commodo faucibus orci. Vivamus laoreet ornare nisi, id pharetra tellus ullamcorper volutpat. Sed lacinia placerat accumsan. Praesent pharetra ipsum scelerisque, sodales urna ut, placerat nulla. Duis nunc urna, semper non arcu ut, sagittis dapibus lorem. Nunc nec urna id velit sodales sodales. Sed porttitor quam eget mollis consequat. Curabitur aliquet nec dui eget aliquet. Nulla in risus ante.</p>
+  </section>
+  <section class="calculate_wrapper">
+    <h2>Калькулятор (стоимость пользователь узнает по телефону)</h2>
+    <div>
+      <div>
+        <img src="images/window1.png" alt="">
+        <a href="">Одностворчатое</a>
+      </div>
+      <div>
+        <img src="images/window2.png" alt="">
+        <a href="">Двустворчатое</a>
+      </div>
+      <div>
+        <img src="images/window3.png" alt="">
+        <a href="">Трехстворчатое</a>
+      </div>
+      <div>
+        <img src="images/window4.png" alt="">
+        <a href="">Балконный блок</a>
+      </div>
+      <div>
+        <img src="images/window5.png" alt="">
+        <a href="">Остекление балкона</a>
+      </div>
+    </div>
+
+    <form action="#" method="POST">
+      <div>
+        <img src="images/window1.png" alt="">
+        <label for="width">высота, см</label>
+        <input id="width" type="text" value="120">
+        <span>X</span>
+        <label for="height">ширина, см</label>
+        <input id="height" type="text" value="120">
+      </div>
+      <div>
+        <h3>Одностворчатое окно КВЕ</h3>
+        <label>1. Критерий выбора</label>
+        <label for="selectPoint1">
+          <input id="selectPoint1" type="radio">
+          пункт выбора 1
+        </label>
+        <label for="selectPoint2">
+          <input id="selectPoint2" type="radio">
+          пункт выбора 2
+        </label>
+        <label for="selectPoint3">
+          <input id="selectPoint3" type="radio">
+          пункт выбора 3
+        </label>
+        <label for="opening">2. Выберите открывание створки</label>
+        <select name="" id="opening">
+          <option value="не открывается">не открывается</option>
+          <option value="открывается">открывается</option>
+        </select>
+      </div>
+      <div>
+        <input type="tel" placeholder="Введите номер">
+        <input type="submit" value="Рассчитать">
+      </div>
+    </form>
+  </section>
+  <footer class="footer">
+    <p>просто скромный футер</p>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>

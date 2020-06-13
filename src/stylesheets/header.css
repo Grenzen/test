@@ -1,0 +1,40 @@
+.header {
+  background-color: #dcdcdc;
+  height: 230px;
+  display: flex;
+}
+
+.header_wrapper {
+  width: 100%;
+  /* margin: auto; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brandLogo {
+  height: 100px;
+  margin-left: 20px;
+  width: 273px;
+}
+
+
+.brandPhone {
+  display: flex;
+  flex-direction: column;
+  width: 318px;
+  height: 79px;
+}
+
+.brandPhone a {
+  color: #767676;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.brandPhone a:active,
+.brandPhone a:hover {
+  color: #4c4444;
+  transition: .2s ease-in-out;
+}

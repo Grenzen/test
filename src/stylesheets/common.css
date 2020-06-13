@@ -1,0 +1,19 @@
+.header_wrapper,
+.form_wrapper,
+.slider_wrapper,
+.text_wrapper,
+.calculate_wrapper,
+.footer {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.header a {
+  font-family: 'MyriadPro Regular';
+}
+
+h2,
+.form label {
+  font-size: 24px;
+  font-family: 'MyriadPro Regular';
+}
