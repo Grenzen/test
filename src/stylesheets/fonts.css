@@ -7,3 +7,8 @@
   font-family: 'MyriadPro Semibold';
   src: url('../fonts/MyriadPro/8145.otf');
 }
+
+@font-face {
+  font-family: 'MyriadPro Italic';
+  src: url('../fonts/MyriadPro/MyriadItalic.ttf');
+}

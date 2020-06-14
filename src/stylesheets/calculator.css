@@ -1,0 +1,257 @@
+.calculate_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.calculate_wrapper h2 {
+  font-family: 'MyriadPro Regular';
+  color: #9DA3D7;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.windows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.window a {
+  margin-top: 30px;
+  font-family: 'MyriadPro Regular';
+  color: #000000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.currentWindow > a,
+.window:hover > a,
+.window:active > a,
+.window:focus > a {
+  color: #0099DE;
+  transition: all .3s ease;
+  text-decoration: underline;
+}
+
+.calculator_container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  margin-bottom: 100px;
+  height: 514px;
+  border-radius: 1%;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(174,174,174,1);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(174,174,174,1);
+  box-shadow: 0px 0px 10px 1px rgba(174,174,174,1);
+}
+
+.calculator {
+  display: flex;
+  flex-direction: row;
+  margin: 40px 28px 30px;
+  height: 70%;
+}
+
+.calculator input,
+select {
+  outline: none;
+  cursor: pointer;
+}
+
+.windowImage1,
+.windowImage2,
+.windowImage3,
+.windowImage4,
+.windowImage5 {
+  height: 165px;
+  margin: 30px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.windowImage1 {
+  background-image: url('../images/window1.svg');
+  width: 105px;
+  left: 10%;
+}
+
+.windowImage2 {
+  background-image: url(../images/window2.svg);
+  width: 194px;
+  left: 5%;
+}
+
+.windowImage3 {
+  background-image: url(../images/window3.svg);
+  width: 287px;
+}
+
+.windowImage4 {
+  background-image: url(../images/window4.svg);
+  width: 205px;
+  left: 5%;
+}
+
+.windowImage5 {
+  background-image: url(../images/window5.svg);
+  width: 200px;
+  left: 5%;
+}
+
+.calculator_windowParameters{
+  width: 410px;
+}
+
+.w,
+.h {
+  font-family: 'MyriadPro Italic';
+  color: #636363;
+  font-size: 22px;
+}
+
+.w {
+  text-align: center;
+  width: 245px;
+}
+
+.h {
+  width: 20px;
+  transform: rotate(270deg);
+  position: relative;
+  bottom: 100px;
+}
+
+.calculator_windowParameters input {
+  color: #5D5D5D;
+  font-size: 40px;
+  font-family: 'MyriadPro Regular';
+  width: 92px;
+  height: 43px;
+  border: 1px solid #A2A2A2;
+  border-radius: 10px;
+  text-align: center;
+  vertical-align: text-bottom;
+}
+
+.calculator_windowParameters label {
+  position: relative;
+  bottom: 10px;
+  color: #000000;
+  font-family: 'MyriadPro Regular';
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.calculator_windowParameters label + label {
+  left: 45px;
+}
+
+.x {
+  margin: 0 10px;
+  color: #0099DE;
+  font-size: 45px;
+  font-family: 'MyriadPro Semibold';
+}
+
+.select {
+  display: flex;
+  flex-direction: column;
+}
+
+.select h3 {
+  color: #0099DE;
+  font-family: 'MyriadPro Semibold';
+  font-size: 27px;
+  margin: 24px 0 52px;
+}
+
+.select .bold {
+  color: #000000;
+  font-family: 'MyriadPro Semibold';
+  font-size: 24px;
+  margin-bottom: 26px;
+}
+
+.choiсe {
+  margin-bottom: 62px;
+}
+
+.choiсe label,
+select {
+  font-family: 'MyriadPro Regular';
+  font-size: 18px;
+}
+
+.choiсe input {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+select {
+  width: 360px;
+  height: 47px;
+  border: 1px solid #AEAEAE;
+  border-radius: 10px;
+  padding-left: 20px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: url('../images/triangle.png') no-repeat center;
+  background-position-x: 316px;
+  outline: 0;
+}
+
+.phoneField {
+  display: flex;
+  justify-content: center;
+}
+
+.userImg {
+  position: relative;
+  left: 46px;
+  background-color: #FFFFFF;
+  z-index: 100;
+  width: 45px;
+  height: 45px;
+  background-image: url(../images/user.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  border: 1px solid #C6C6C6;
+}
+
+.phoneField input {
+  width: 281px;
+  height: 47px;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  background-color: #C6C6C6;
+  font-family: 'MyriadPro Regular';
+  font-size: 18px;
+  color: #424242;
+  text-align: center;
+  cursor: pointer;
+}
+
+.phoneField input + input {
+  margin-left: 21px;
+  background-color: #9DA3D7;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: 'MyriadPro Semibold';
+}

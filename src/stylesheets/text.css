@@ -1,0 +1,20 @@
+.text_wrapper {
+  margin-top: 50px;
+  margin-bottom: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text_wrapper h2 {
+  font-family: 'MyriadPro Regular';
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.dummyText {
+  width: 98%;
+  font-family: 'MyriadPro Regular';
+}

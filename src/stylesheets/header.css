@@ -4,6 +4,10 @@
   display: flex;
 }
 
+.header a {
+  font-family: 'MyriadPro Regular';
+}
+
 .header_wrapper {
   width: 100%;
   /* margin: auto; */
@@ -31,6 +35,18 @@
   color: #767676;
   font-size: 40px;
   text-decoration: none;
+}
+
+@media screen and (max-width: 650px) {
+  
+  .brandPhone {
+    align-items: flex-end;
+  } 
+  
+  .brandPhone a {
+    font-size: 20px;
+  }
+  
 }
 
 .brandPhone a:active,

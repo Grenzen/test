@@ -3,13 +3,9 @@
 .slider_wrapper,
 .text_wrapper,
 .calculate_wrapper,
-.footer {
+.footer_wrapper {
   max-width: 1000px;
   margin: auto;
-}
-
-.header a {
-  font-family: 'MyriadPro Regular';
 }
 
 h2,

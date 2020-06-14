@@ -2,6 +2,14 @@
   display: none;
 }
 
+.slider_wrapper h2 {
+  font-family: 'MyriadPro Regular';
+  color: #9DA3D7;
+  margin: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 710px) {
   .slider_wrapper {
     width: 708px;
@@ -56,8 +64,6 @@
     right: 0;
     border-radius: 3px 0 0 3px;
   }
-  
-  
   
   .slider__dots {
     text-align: center;

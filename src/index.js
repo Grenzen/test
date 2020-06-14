@@ -1,5 +1,6 @@
 let index = 1;
 showSlides(index);
+activeWindow();
 
 function plusSlides(n) {
   showSlides(index += n);
@@ -28,10 +29,34 @@ function showSlides(n) {
 
   function currentDots(n) {
     let dots = document.getElementsByClassName('slider__dots--dot');
-    // console.table(dots[n].className);
     for (let i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
     }
     dots[n - 1].classList.add('active');
   }
+}
+
+function activeWindow(n, name) {
+  let index = n || 1;
+  let text = name || 'Одностворчатое окно КВЕ';
+  let window = document.getElementById('windowImage');
+  window.className = '';
+  window.classList.add(`windowImage${index}`);
+  current(index);
+  changeWindowName(text);
+}
+
+function current(n) {
+  let images = document.getElementsByClassName('window');
+  for (let i = 0; i < images.length; i++) {
+    images[i].className = images[i].className.replace(' currentWindow', '');
+  }
+  images[n - 1].classList.add('currentWindow');
+}
+
+function changeWindowName(n) {
+  let text = n;
+  let windowName = document.getElementById('windowName');
+  windowName.innerHTML = '';
+  windowName.innerHTML = `${text}`;
 }
