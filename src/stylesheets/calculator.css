@@ -25,18 +25,17 @@
   cursor: pointer;
 }
 
-.window a {
+.window p {
   margin-top: 30px;
   font-family: 'MyriadPro Regular';
   color: #000000;
   font-size: 14px;
-  text-decoration: none;
 }
 
-.currentWindow > a,
-.window:hover > a,
-.window:active > a,
-.window:focus > a {
+.currentWindow > p,
+.window:hover > p,
+.window:active > p,
+.window:focus > p {
   color: #0099DE;
   transition: all .3s ease;
   text-decoration: underline;
